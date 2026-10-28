@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minecraft Cloud Saves — 个人存档备份</title>
+<style>body{font:17px/1.8 system-ui,sans-serif;max-width:760px;margin:64px auto;padding:0 24px;color:#1f2937}h1{line-height:1.25}a{color:#126348}footer{margin-top:48px;color:#667085;font-size:14px}</style>
+<h1>Minecraft Cloud Saves</h1>
+<p>这是用于个人 Minecraft Java 世界备份与双电脑交接的本地工具配置说明。核心软件为开源的 <a href="https://restic.net/">restic</a> 和 <a href="https://rclone.org/">rclone</a>。</p>
+<p>工具在游戏退出后创建完整世界快照，由 restic 加密和去重，再通过 rclone 上传到用户自己的 Google Drive。恢复时先下载到临时目录并检查完整性；发生版本分叉时保留各版本，等待用户决定。</p>
+<h2>Google Drive 访问</h2>
+<p>Google OAuth 客户端仅供拥有者本人使用。请求的权限为 <code>https://www.googleapis.com/auth/drive.file</code>，用于管理此应用创建或经用户明确授权的备份文件。此页面不提供登录服务，不请求密码，也不接收任何世界文件、授权令牌或恢复密钥。</p>
+<p><a href="privacy.html">查看隐私权政策</a></p>
+<footer>个人用途说明。此工具与 Mojang、Microsoft 或 Google 没有隶属关系。更新日期：2026-10-28。</footer>
+</html>

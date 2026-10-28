@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私权政策 — Minecraft Cloud Saves</title>
+<style>body{font:17px/1.8 system-ui,sans-serif;max-width:760px;margin:64px auto;padding:0 24px;color:#1f2937}h1{line-height:1.25}a{color:#126348}footer{margin-top:48px;color:#667085;font-size:14px}</style>
+<h1>Minecraft Cloud Saves 隐私权政策</h1>
+<p>适用范围：由拥有者本人使用的本地 restic、rclone 及 Minecraft 世界备份辅助脚本。此配置不提供面向公众的账户服务。</p>
+<h2>访问和用途</h2>
+<p>在用户通过 Google 官方登录页面授权后，rclone 使用 Google Drive API 管理本应用创建或经用户明确授权的备份数据。使用范围为 <code>drive.file</code>。工具使用文件标识、大小、校验信息及存储配额等信息，完成上传、下载、容量检查和历史恢复。</p>
+<h2>存储和保护</h2>
+<p>世界文件由 restic 在本地加密后写入用户自己的 Google Drive。用于自动访问的 OAuth 令牌和备份恢复密钥保存在本机用户的受限配置目录中。Google 账号密码不由本工具收集。用户应自行保护电脑、Google 账号和离线恢复密钥。</p>
+<h2>分享与处理</h2>
+<p>本配置不向工具开发者运营的服务器发送存档或凭据，不出售 Google 用户数据，不用于广告或 AI 模型训练。Google Drive 按其服务政策存储备份；首页及隐私说明由网页托管服务提供，该服务可能按自身政策处理常规访问日志。</p>
+<h2>用户控制</h2>
+<p>用户可停止本地脚本，或在 Google 账号的第三方连接设置中撤销授权。撤销访问不会自动删除已有备份。用户可自行决定何时删除本地及云端历史；本配置不自动购买存储空间。需要修改或停用此个人配置时，由拥有者通过本地设置及 Google Cloud 项目进行管理。</p>
+<p>本政策所述 Google 用户数据的使用与转移遵守 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>，包括 Limited Use 要求。</p>
+<p><a href="index.html">返回首页</a></p>
+<footer>更新日期：2026-10-28。联系渠道为本应用 Google OAuth 同意页面列出的用户支持邮箱。</footer>
+</html>
